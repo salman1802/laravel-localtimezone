@@ -1,0 +1,16 @@
+{
+    "name": "iroid/laravel-timezone",
+    "description": "\"\"\u001b[DPackage to convert or get date time in localtimezone\"",
+    "autoload": {
+        "psr-4": {
+            "Iroid\\LocalTimezone\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dev-irod",
+            "email": "salman.iroid@gmail.com"
+        }
+    ],
+    "require": {}
+}
