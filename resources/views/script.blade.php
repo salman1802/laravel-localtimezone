@@ -1,9 +1,5 @@
-<script src="https://rawgit.com/moment/moment/2.6.0/min/moment.min.js"></script>
-<script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
 <script>
-    function getUserTimezone() {
-        return moment.tz.guess();
-    }
+    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     document.addEventListener('DOMContentLoaded', function() {
         var timezone = getUserTimezone();
         fetch('{{ route('set-timezone') }}', {
